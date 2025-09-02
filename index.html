@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Notes</title>
     <style>
-        body {
+        body 
+        {
             font-family:Georgia, 'Times New Roman', Times, serif;
             background-color:blueviolet;
             display: flex;
@@ -15,24 +16,28 @@
             padding: 20px;
         }
 
-        .sticky-notes-container {
+        .sticky-notes-container 
+        {
             width: 90%;
             max-width: 1200px;
         }
 
-        h1 {
+        h1 
+        {
             text-align: center;
             color: #333;
         }
 
-        #add-note-form {
+        #add-note-form 
+        {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
         }
 
-        #note-text {
+        #note-text 
+        {
             width: 100%;
             max-width: 400px;
             height: 100px;
@@ -43,7 +48,8 @@
             resize: vertical;
         }
 
-        button {
+        button 
+        {
             margin-top: 10px;
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -54,17 +60,20 @@
             font-size: 16px;
         }
 
-        button:hover {
+        button:hover 
+        {
             background-color: #45a049;
         }
 
-        #notes-grid {
+        #notes-grid 
+        {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
 
-        .sticky-note {
+        .sticky-note 
+        {
             background-color:chartreuse;
             padding: 20px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -75,17 +84,20 @@
             word-wrap: break-word;
         }
 
-        .sticky-note:nth-child(even) {
+        .sticky-note:nth-child(even) 
+        {
             transform: rotate(1deg);
         }
 
-        .sticky-note:hover {
+        .sticky-note:hover 
+        {
             transform: scale(1.05) rotate(0deg);
             z-index: 10;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
         }
 
-        .delete-button {
+        .delete-button 
+        {
             position: absolute;
             top: 5px;
             right: 5px;
@@ -98,11 +110,12 @@
             transition: opacity 0.2s;
         }
 
-        .delete-button:hover {
+        .delete-button:hover 
+        {
             opacity: 1;
             color: #c00;
         }
-    </style>
+</style>
 </head>
 <body>
     <div class="sticky-notes-container">
